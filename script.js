@@ -78,34 +78,38 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What is Capital of Bangladesh?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Dhaka', correct: true },
+      { text: 'Khulna', correct: false },
+      { text: 'Barisal', correct: false },
+      { text: 'Sylhet', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is Jashim Uddin?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Philosopher', correct: false },
+      { text: 'Poet', correct: true },
+      { text: 'Politicians', correct: false },
+      { text: 'Singer', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'Who wrote Naksi Katha?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Kazi Nazrul', correct: false },
+      { text: 'Rabindra Nath Thakur', correct: false },
+      { text: 'Shamsur Rahman', correct: false },
+      { text: 'Jashim Uddin', correct: true }
     ]
   },
   {
     question: 'What is 4 * 2?',
     answers: [
       { text: '6', correct: false },
+      { text: '7', correct: false },
+      { text: '5', correct: false },
       { text: '8', correct: true }
     ]
   }

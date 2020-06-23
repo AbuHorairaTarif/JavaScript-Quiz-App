@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: Gotham Rounded;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -9,24 +9,21 @@
   --hue-correct: 145;
 }
 
-body {
-  --hue: var(--hue-neutral);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
-}
-
 body.correct {
   --hue: var(--hue-correct);
 }
 
 body.wrong {
   --hue: var(--hue-wrong);
+}
+
+.quiz-game {
+  /* justify-content: center; */
+  /* text-align: center; */
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  
 }
 
 .container {
@@ -57,15 +54,19 @@ body.wrong {
 
 .btn:hover {
   border-color: black;
+  background-color: yellow;
 }
 
 .btn.correct {
   --hue: var(--hue-correct);
-  color: black;
+  background-color: green;
+  color: white;
 }
 
 .btn.wrong {
-  --hue: var(--hue-wrong);
+  /* --hue: var(--hue-wrong); */
+  --hue: var(--hue-neutral);
+  background-color: red;
 }
 
 .start-btn, .next-btn {
